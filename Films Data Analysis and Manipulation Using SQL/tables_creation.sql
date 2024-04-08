@@ -26,7 +26,7 @@ COPY films.public.films(id,
 		   certification, 
 		   gross, 
 		   budget)
-FROM 'D:\Zaid\SQL Projects\Films\films.csv'
+FROM 'D:\films.csv' -- path to csv file
 DELIMITER ','
 CSV;
 
@@ -56,7 +56,7 @@ COPY films.public.people(
 	birthdate,
 	deathdate
 )
-FROM 'D:\Zaid\SQL Projects\Films\people.csv'
+FROM 'D:\people.csv' -- path to csv file
 DELIMITER ','
 CSV;
 
@@ -89,7 +89,7 @@ COPY films.public.reviews(
 	num_votes,
 	facebook_likes
 )
-FROM 'D:\Zaid\SQL Projects\Films\reviews.csv'
+FROM 'D:\reviews.csv' -- path to csv file
 DELIMITER ','
 CSV;
 
@@ -118,7 +118,7 @@ COPY films.public.roles(
 	person_id,
 	role
 )
-FROM 'D:\Zaid\SQL Projects\Films\roles.csv'
+FROM 'D:\roles.csv' -- path to csv file
 DELIMITER ','
 CSV;
 films.public.
