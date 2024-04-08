@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS films.public.people
 	deathdate date
 );
 
--- coying people data from the csv file stored into the computer
+-- copying people data from the csv file stored into the computer
 COPY films.public.people(	
 	id,
 	name,
@@ -93,7 +93,7 @@ FROM 'D:\reviews.csv' -- path to csv file
 DELIMITER ','
 CSV;
 
--- Checking the people table
+-- Checking the reviews table
 SELECT * FROM films.public.reviews;
 
 SELECT 
@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS films.public.roles
 	role VARCHAR
 );
 
--- coying reviews data from the csv file stored into the computer
+-- coying roles data from the csv file stored into the computer
 COPY films.public.roles(	
 	id,
 	film_id,
@@ -121,7 +121,7 @@ COPY films.public.roles(
 FROM 'D:\roles.csv' -- path to csv file
 DELIMITER ','
 CSV;
-films.public.
+
 -- Checking the roles table
 SELECT * FROM films.public.roles;
 
